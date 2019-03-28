@@ -1,4 +1,4 @@
-CuraEngine
+CuraEngine27
 ==========
 The CuraEngine is a C++ console application for 3D printing GCode generation. It has been made as a better and faster alternative to the old Skeinforge engine.
 
@@ -22,7 +22,7 @@ How to Install
 2. Install Protobuf >= 3.0.0 (see below)
 3. Install libArcus (see https://github.com/Ultimaker/libArcus)
 
-In order to compile CuraEngine, either use CMake or start a project in your preferred IDE. 
+In order to compile CuraEngine, either use CMake or start a project in your preferred IDE.
 CMake compilation:
 
 1. Navigate to the CuraEngine directory and execute the following commands
@@ -40,7 +40,7 @@ Installing Protobuf
 -------------------
 1. Be sure to have libtool installed.
 2. Download protobuf from https://github.com/google/protobuf/releases (download ZIP and unZIP at desired location, or clone the repo). The protocol buffer is used for communication between the CuraEngine and the GUI.
-3. Run ```autogen.sh``` from the protobuf directory: 
+3. Run ```autogen.sh``` from the protobuf directory:
    ```$ ./autogen.sh```
 4. ```$ ./configure```
 5. ```$ make```
@@ -57,7 +57,7 @@ Note that the structure of the json files has changed since 2.1. In the correspo
 An example run for an UM2 machine looks as follows:
 * Navigate to the CuraEngine directory and execute the following
 ```
-./build/CuraEngine slice -v -j ../Cura/resources/definitions/dual_extrusion_printer.def.json -o "output/test.gcode" -e1 -s infill_line_distance=0 -e0 -l "/model_1.stl" -e1 -l "fully_filled_model.stl" 
+./build/CuraEngine slice -v -j ../Cura/resources/definitions/dual_extrusion_printer.def.json -o "output/test.gcode" -e1 -s infill_line_distance=0 -e0 -l "/model_1.stl" -e1 -l "fully_filled_model.stl"
 ```
 
 Run `CuraEngine help` for a general description of how to use the CuraEngine tool.
